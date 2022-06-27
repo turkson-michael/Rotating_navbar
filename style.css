@@ -41,7 +41,7 @@ body {
   transition: transform 0.5s linear;
 }
 
-.container.show-nav.circle {
+.container.container.show-nav .circle {
   transform: rotate(-70deg);
 }
 
@@ -51,7 +51,7 @@ body {
   top: 50%;
   left: 50%;
   height: 100px;
-  background-color: transparent;
+  background: transparent;
   border: 0;
   font-size: 25px;
   color: #fff;
@@ -71,6 +71,8 @@ body {
   transform-origin: top left;
 }
 
+/********************************************  */
+
 .container.container.show-nav + nav li {
   transform: translateX(0);
   transition-delay: 0.3s;
@@ -84,7 +86,7 @@ nav {
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   padding-left: 30px;
 }
 
@@ -97,21 +99,22 @@ nav ul li {
 }
 
 nav ul li i {
-  font-size: 12px;
-  margin-right: 10px;
+  font-size: 10px;
+  margin-right: 20px;
 }
 
 nav ul li + li {
-  margin-left: 15px;
+  margin-left: 10px;
   transform: translateX(-150%);
 }
 
 nav ul li + li + li {
-  margin-left: 30px;
+  margin-left: 20px;
   transform: translateX(-200%);
 }
 
-.puppy {
+/**********************************************  */
+.content img {
   max-width: 100%;
 }
 
@@ -120,13 +123,14 @@ nav ul li + li + li {
   margin: 50px auto;
 }
 
-h1 {
+.content h1 {
   margin: 0;
 }
 
 .content small {
   color: #555;
   font-style: italic;
+  font-weight: bold;
 }
 
 .content p {
